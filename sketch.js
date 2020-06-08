@@ -6,7 +6,9 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var box1, pig1,pig3;
 var backgroundImg,platform;
-var bird, slingshot,bg;
+var bird, slingshot;
+
+var bg = loadImage("homeBgImg.jpg");
 
 var gameState = "onSling";
 var score = 0;
@@ -110,7 +112,7 @@ async function getBackgroundImg(){
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
     
-    if(hour>=0900 && hour<=1430){
+    if(hour>=0900 && hour<=1400){
         bg = "schoolBgImg.png";
     }
     else{
