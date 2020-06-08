@@ -6,10 +6,9 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var box1, pig1,pig3;
 var backgroundImg,platform;
-var bird, slingshot;
+var bird, slingshot,bg;
 
 var gameState = "onSling";
-var bg = "sprites/bg1.png";
 var score = 0;
 
 function preload() {
