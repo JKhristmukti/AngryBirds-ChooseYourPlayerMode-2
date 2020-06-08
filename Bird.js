@@ -1,8 +1,8 @@
 class Bird extends BaseClass {
   constructor(x,y){
     super(x,y,50,50,0,1.0,0.2);
-    this.image = loadImage("sprites/upload_pic_page.png");
-    this.smokeImage = loadImage("sprites/smoke.png");
+    this.image = loadImage("upload_pic_page.png");
+    this.smokeImage = loadImage("smoke.png");
     this.trajectory =[];
   }
 
@@ -25,13 +25,13 @@ class Bird extends BaseClass {
 
   imageChanger() {
     if(keyCode===97){
-      this.image = loadImage("sprites/bird.png");
+      this.image = loadImage("bird.png");
     }
     if(keyCode===98){
-      this.image = loadImage("sprites/upload_pic_page.png");
+      this.image = loadImage("upload_pic_page.png");
     }
     if(keyCode===99){
-      this.image = loadImage("sprites/canonBall.png");
+      this.image = loadImage("canonBall.png");
     }
   }
 }

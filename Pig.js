@@ -1,7 +1,7 @@
 class Pig extends BaseClass {
   constructor(x, y){
     super(x,y,50,50,0,0.8,0.5);
-    this.image = loadImage("sprites/hatsOff.png");
+    this.image = loadImage("hatsOff.png");
     this.Visiblity = 255;
   }
 
